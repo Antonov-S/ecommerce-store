@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { MouseEventHandler } from "react";
 import { Expand, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -20,17 +19,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
     router.push(`/product/${data?.id}`);
   };
 
-  // const onPreview: MouseEventHandler<HTMLButtonElement> = event => {
-  //   event.stopPropagation();
-
-  //   previewModal.onOpen(data);
-  // };
-
-  // const onAddToCart: MouseEventHandler<HTMLButtonElement> = event => {
-  //   event.stopPropagation();
-
-  //   cart.addItem(data);
-  // };
+  // TODO: Modal and actions
 
   return (
     <div onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
